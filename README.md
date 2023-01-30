@@ -1,6 +1,6 @@
 # Term Tagger
 
-This project is based in term recognition using BERT for the NLP domain. 
+This project is based in term recognition using BERT for the NLP domain. To see more of our methodology, results and analysis, see the [report](https://github.com/averieso/nlp-term-tagger/blob/main/terminology_paper.pdf). 
 
 By [Averie Ho Zoen So](https://github.com/averieso) and [Silviya Silwal](https://github.com/ssilwalcode)
 
