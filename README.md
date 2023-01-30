@@ -1,69 +1,26 @@
-# terminology-project-2022
+# Term Tagger
 
-This repository will contain the dataset that will be used for the terminology project 2022 for Master 2 NLP.
+This project is based in term recognition using BERT for the NLP domain
 
-The dataset is made of abstracts from the computational linguistics journal: https://direct.mit.edu/coli/issue
+## Installation
 
+Use the requirements.txt file to install all necessary packages.
 
-# Directories tree
+```bash
+$ pip install -r requirements.txt
+```
 
+## Usage
 
-pilot/
+- Use python bert_pipeline.py to run experiments for bert. Hyperparameters are pre-defined in the code.
+- Use python nltk_spacy_iob.py to run off-the-shelf baseline experiments.
+- Use python max_rule_baseline.py to run the max rule baseline.
+- Use python ner_span_eval.py to conduct span-based evaluation and error analysis. 
+- Use python cohens_kappa.py to measure inter-annotator agreement. 
 
-train/
+## Project by:
 
-    2009/
-    2010/
-    ...
-    2021/
-
-
-dev/
-
-    2009/
-    2010/
-    ...
-    2021/
-
-test/
-
-    2009/ 
-    2010/ 
-    ... 
-    2021/ 
-
-# File naming
-
-<year>-<volume>-<number>-<pages>
-
-<year>: year of publication
-<volume>: volume 
-<number>: number 
-<pages> : page range
-
-ex. 2022-48-3-491-516
-
-Extensions
-
-    - .txt => plain text of the abstract of the publication (ex. 2022-48-3-491-516.txt)
-    - .ann1 => text annotated by annotator 1 (2022-48-3-491-516.ann1)
-    - .ann2 => text annotated by annotator 2 (2022-48-3-491-516.ann2)
-    - .final => adjudicated annotated text
-
-
-# Job distribution over groups
-
-Each group is assigned two years of publications
-- year1: the two members of the group are in charge of individually annotating in parallel the abstracts of the papers published in year1, producing .txt, .ann1 and .ann2 files
-- year2: the two members are in charge of adjudicating the individual annotations (ann1 and ann2) produced by another group and producing .final files
-
-The year distribution is given on the Arche page.
-
-
-
-
-
-
+Averie (Ho Zoen) So, Silviya Silwal
 
 
 
